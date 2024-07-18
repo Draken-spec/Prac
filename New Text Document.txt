@@ -1,0 +1,62 @@
+create database 2310f1;
+
+-- create table students (
+-- stu_id int,
+-- name varchar(20),
+-- email varchar(40)
+-- );
+
+-- insert into students (stu_id , name , email) values(1,'salman','salman@gmail.com');
+
+
+
+
+
+create table customers(
+customer_id varchar(5),
+company_name varchar(40),
+contact_name varchar(30),
+address varchar(60),
+phone varchar (24)
+);
+create table employees (
+employee_id int(4),
+first_name varchar (20),
+last_name varchar (20),
+title_name varchar (10),
+address_name varchar (60)
+);
+create table orders (
+ordered varchar (4),
+order_name varchar (40),
+unitprice varchar (8)
+);
+
+
+insert into customers(customer_id , company_name, contact_name , address , phone) values
+(1,'sdjak','hfuiasyi' , 'diyfifsuhal' , 'uasdflgf'),
+(2 , 'daodfui' , 'fnjsg' , 'sga' , 'fsaf'),
+(3, 'gsdfgdfsg' , 'gfsd' , 'dgsf' , 'gsdg'),
+(4 , 'fgdgs' , 'gsdgd' , 'trjdf' , 'jgfaa'),
+(5 , 'wvhjq' , 'bchdfj' , 'bvfhya' , 'gsdjhw');
+
+
+insert into employees( employee_id , first_name , last_name , title_name, address_name) values
+(1,'sdjak','hfuiasyi' , 'diyfifsuhal' , 'uasdflgf'),
+(2 , 'daodfui' , 'fnjsg' , 'sga' , 'fsaf'),
+(3, 'gsdfgdfsg' , 'gfsd' , 'dgsf' , 'gsdg'),
+(4 , 'fgdgs' , 'gsdgd' , 'trjdf' , 'jgfaa'),
+(5 , 'wvhjq' , 'bchdfj' , 'bvfhya' , 'gsdjhw');
+
+
+insert into orders(ordered , order_name, unitprice) values
+(1,'sdjak', 'uasdflgf'),
+(2 , 'daodfui' , 'fnjsg'),
+(3, 'gsdfgdfsg' , 'gfsd'),
+(4 , 'fgdgs' , 'gsdgd' ),
+(5 , 'wvhjq' , 'bchdfj' );
+
+
+alter table orders modify order_name varchar (50);
+alter table employees drop column title_name;
+alter table employees add phone varchar(24);
